@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-curve bg-no-repeat bg-bottom lg:bg-half;
+  }
+}
+
+@layer components {
+  .quote {
+    &::after,
+    &::before {
+      content: "\0022";
+      margin: 0 1px;
+    }
+  }
+}
